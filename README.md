@@ -11,6 +11,10 @@ Chatbot-EV
   - pdf_handler.py    # Load PDFs → convert to documents → chunk → embeddings
   - helper.py         # LLM helper functions (QA from context, embeddings)
   - vector_store.py   # FAISS vector database management
+- data
+  - csv: co sales.csv, indsutry sales.csv
+  - pdfs - subfolders
+-cache - faiss_index - pdf_vectorstore ; where embeddings faiss are extracted and stored.
 
 How It Works
 1. User Input Flow
