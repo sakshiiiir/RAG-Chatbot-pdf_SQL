@@ -1,0 +1,39 @@
+# Core
+streamlit==1.31.0
+python-dotenv==1.0.0
+
+# LangChain
+langchain==0.3.27
+langchain-core>=0.3.72,<1.0.0
+langchain-community==0.3.17
+
+
+# FREE LLM Options (choose one or both)
+#langchain-google-genai>=2.0,<3.0  # For Gemini (RECOMMENDED)
+#langchain-huggingface==0.1,<0.2    # For HuggingFace
+langchain-google-genai==2.0.5        # Gemini (works with LangChain ≥0.3)
+langchain-huggingface==0.1.2         # HuggingFace integration
+
+# Embeddings (FREE options)
+#google-generativeai     # Gemini embeddings
+#sentence-transformers==2.6.0    # HuggingFace embeddings (runs locally)
+google-generativeai==0.8.3           # Gemini text/embeddings
+sentence-transformers==2.6.1         # HuggingFace (local)
+transformers>=4.46.0
+
+# PDF Processing.env 
+PyMuPDF==1.24.10
+pypdf==4.2.0
+rank-bm25==0.2.2
+
+# Vector Store
+faiss-cpu==1.8.0
+
+# CSV/Data Processing
+pandas==2.2.0
+numpy==1.26.4
+
+# Visualization
+plotly==5.18.0
+
+fasttext
