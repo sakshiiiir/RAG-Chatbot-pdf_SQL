@@ -3,8 +3,8 @@
 This project implements a Retrieval-Augmented Generation (RAG) Chatbot for electric vehicle (EV) data. The chatbot can handle structured CSV data and unstructured PDF documents, allowing users to ask questions and get answers via a Streamlit interface.
 
 Data Used:
-PDFs: Sales and annual reports (not uploaded due to privacy reasons)
-CSV Files: Company sales and industry data
+PDFs: Sales and annual reports (uploaded test file here instead of the actual pdfs)
+CSV Files: Company sales and industry data (uploaded test file here instead of the actual pdfs)
 
 Folder structure:
 - app.py: Streamlit front-end
@@ -17,7 +17,7 @@ Folder structure:
 - data
   - csv: co sales.csv, industry sales.csv
   - pdfs - subfolders
--cache/faiss_index/pdf_vectorstore/ ; where embeddings faiss are extracted and stored.
+  - cache/faiss_index/pdf_vectorstore/ ; where embeddings faiss are extracted and stored.
 
 How It Works
 1. User Input Flow
