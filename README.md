@@ -53,7 +53,8 @@ Process:
 
 6. System Architecture
    
-<img width="992" height="1500" alt="image" src="https://github.com/user-attachments/assets/1cd66b81-c307-4e6e-8c46-9f4ec55c0b11" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/ae078481-9580-4b30-a463-cb8f49a01d00" />
+
 
 
 7. Technologies Used:
