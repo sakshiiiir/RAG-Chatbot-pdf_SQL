@@ -2,8 +2,11 @@
 
 This project implements a Retrieval-Augmented Generation (RAG) Chatbot for electric vehicle (EV) data. The chatbot can handle structured CSV data and unstructured PDF documents, allowing users to ask questions and get answers via a Streamlit interface.
 
-Chatbot-EV
+Data Used:
+PDFs: Sales and annual reports (not uploaded due to privacy reasons)
+CSV Files: Company sales and industry data
 
+Folder structure:
 - app.py: Streamlit front-end
 - tester.py: Python script to test queries locally
 -  src/
@@ -12,9 +15,9 @@ Chatbot-EV
   - helper.py         # LLM helper functions (QA from context, embeddings)
   - vector_store.py   # FAISS vector database management
 - data
-  - csv: co sales.csv, indsutry sales.csv
+  - csv: co sales.csv, industry sales.csv
   - pdfs - subfolders
--cache - faiss_index - pdf_vectorstore ; where embeddings faiss are extracted and stored.
+-cache/faiss_index/pdf_vectorstore/ ; where embeddings faiss are extracted and stored.
 
 How It Works
 1. User Input Flow
@@ -48,15 +51,31 @@ Process:
 - Gemini SQL agent generates SQL queries based on user question
 - Query results are returned
 
-6. Technologies Used:
+6. System Architecture
+   
+<img width="992" height="1500" alt="image" src="https://github.com/user-attachments/assets/1cd66b81-c307-4e6e-8c46-9f4ec55c0b11" />
+
+
+7. Technologies Used:
 - LLM: Gemini API (QnA), gemini-2.5-pro(for qna), gemini-2.0-flash (for sql agent)
 - Vector Database: FAISS
 - Embeddings: HuggingFace SentenceTransformer (all-MiniLM-L6-v2) or Gemini
 - UI: Streamlit
 - Database: SQLite for structured CSV data
   
-7. how to run:
+8. how to run:
+  Give API Keys in .env file
+  python -m venv env && source env/bin/activate for environment setup.
   pip install -r requirements.txt
   streamlit run app.py
   python tester.py
+
+  streamlit images:
+  user input: Tell me about Ather's recent strategy
+<img width="1710" height="1093" alt="chatbot-qna-pdf" src="https://github.com/user-attachments/assets/36b879f3-3c73-4295-bb5f-43ae750c442d" />
+
+  user input: What are the top selling models last quarter
+<img width="2024" height="1470" alt="image" src="https://github.com/user-attachments/assets/36fd71b5-3725-4ce7-b995-9dba7194df03" />
+
+
 
