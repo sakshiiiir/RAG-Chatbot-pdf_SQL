@@ -1,0 +1,19 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Local settings / credentials
+.env
+local_data.db
+cache/
+
+# Pickle / cache
+*.pkl
+*.faiss
+
+# Optional: logs
+*.log
